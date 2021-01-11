@@ -28,12 +28,24 @@ Similar to the section above, I then tried using a 2 day rollling average of FNG
 ### Comparing the results
 
 **Which model has a lower loss?**
+
 The model using BTC close prices showed lower loss results compared to the model using FNG values.
 
 **Which model tracks the actual values better over time?**
+
 Based on the plots shown above, BTC closing prices tracks actual values over time much better than FNG values. 
 
 **Which window size works best for the model?**
+
 For my analysis, I tested the windows 10, 5 and 2. The 2 day rolling window was the model that had the lowest loss and also the closest predictions. For the FNG values, reducing the window from 10 to 2 improved the model but only very slightly. The FNG values did not seem to track the actual values at all. 
 
 
+### Jupyter Notebook files
+
+[LSTM RNN BTC 10 day window](https://github.com/nikanikachan/HW14_DeepLearning/blob/main/lstm_stock_predictor_closing.ipynb)
+
+[LSTM RNN BTC 2 day window](https://github.com/nikanikachan/HW14_DeepLearning/blob/main/lstm_stock_predictor_closing_2daywindow.ipynb)
+
+[LSTM RNN FNG 10 day window](https://github.com/nikanikachan/HW14_DeepLearning/blob/main/lstm_stock_predictor_fng.ipynb)
+
+[LSTM RNN FNG 2 day window](https://github.com/nikanikachan/HW14_DeepLearning/blob/main/lstm_stock_predictor_fng_2daywindow.ipynb)
